@@ -1,3 +1,6 @@
+## Rewards demo Application
+A spring boot application that calculates rewards based on customer transactions
+
 ## Build
 
 mvn clean install
