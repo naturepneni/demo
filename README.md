@@ -12,37 +12,39 @@ java -jar .\target\demo-0.0.1-SNAPSHOT.jar
 ## Create a transaction
 ```bash
 
- POST 'http://localhost:8080/transaction/spent' 
- 
- 
- JSON:
-  {
-    "customerId": "10000002",
-    "amountSpent": 120
+POST 'http://localhost:8080/transaction/spent' 
+
+
+JSON:
+{
+"customerId": "10000002",
+"amountSpent": 120
 }
 
 ```
 ## Get Rewards total:
 ```bash
- GET 'http://localhost:8080/reward/total/10000002'
- 
- 10000002 is the customerId
- 
- success response:
- {
-    "customerId": "10000002",
-    "total": 90
+
+GET 'http://localhost:8080/reward/total/10000002'
+
+10000002 is the customerId
+
+success response:
+{
+"customerId": "10000002",
+"total": 90
 }
 
- 
- If no transactions error message is shown:
- {
-    "message": "No transactions found"
+
+If no transactions error message is shown:
+{
+"message": "No transactions found"
 }
- ```
+```
 
 ## Get Rewards by Month
 ```bash
+
 GET 'http://localhost:8080/reward/month/10000002' 
 
 success response:
